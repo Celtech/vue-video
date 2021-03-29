@@ -1,3 +1,5 @@
+# Closes #123
+
 ## Overview
 A description about your pull request
 
