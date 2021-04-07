@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap');
 
 * {
-  display: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -33,6 +33,7 @@ body {
 
     &-footer {
       flex-shrink: 0;
+      background: $color-dark;
     }
   }
 }
