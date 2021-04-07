@@ -2,6 +2,9 @@
 
 @mixin button {
   .button {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
     padding: 1rem;
     background: $color-primary;
     border: none;

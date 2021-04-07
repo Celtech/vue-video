@@ -1,6 +1,49 @@
-.copyright {
+@import "../colors";
+
+#footer {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  background: $color-dark;
+  color: white;
+  max-width: 1140px;
+  margin: auto;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  .copyright {
+    flex: 1;
+  }
+
+  .links {
+    margin: .5rem 0 0 0;
+
+    @media screen and (min-width: 768px) {
+      margin: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+
+        &:not(:last-child) {
+          &:after {
+            content: '';
+            border-right: 1px solid white;
+            margin: .5rem;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,12 @@
+@import "colors";
+
+@mixin input {
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    font-size: 1.25rem;
+    border-radius: .25rem;
+    border: 1px solid $color-input-border;
+  }
+}
