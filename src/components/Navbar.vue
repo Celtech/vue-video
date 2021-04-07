@@ -1,5 +1,14 @@
 <template>
-  <nav id="navbar" :class="fixed ? 'navbar-fixed' : ''">
+  <nav
+    id="navbar"
+    :class="
+      fixed
+        ? menuOpen
+          ? 'navbar-solid navbar-fixed'
+          : 'navbar-fixed'
+        : 'navbar-solid'
+    "
+  >
     <div id="navbar-container">
       <div class="navbar-branding">
         <router-link class="branding-link" :to="{ name: 'Home' }">

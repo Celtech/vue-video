@@ -4,11 +4,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(9,12,19,0) !important;
+  background: rgba(9,12,19,0);
+}
+
+.navbar-solid {
+  background: rgba(9,12,19,1);
 }
 
 #navbar {
-  background: rgba(9,12,19,1);
   width: 100%;
   user-select: none;
   font-family: 'Barlow Condensed', sans-serif;
@@ -61,7 +64,7 @@
       cursor: pointer;
       color: rgba(255, 255, 255, 0.8);
       font-size: 2rem;
-      margin-top: 7px;
+      margin-top: 12px;
 
       @media screen and (min-width: 768px) {
         display: none;
@@ -93,14 +96,16 @@
         }
 
         &.active {
-          &::after {
-            position: absolute;
-            left: calc(50% - (calc(100% - 3rem) / 2));
-            bottom: 1.7rem;
-            content: '';
-            height: 1px;
-            width: calc(100% - 3rem);
-            border-bottom: 2px solid white;
+          @media screen and (min-width: 768px) {
+            &::after {
+              position: absolute;
+              left: calc(50% - (calc(100% - 3rem) / 2));
+              bottom: 1.7rem;
+              content: '';
+              height: 1px;
+              width: calc(100% - 3rem);
+              border-bottom: 2px solid white;
+            }
           }
         }
 
@@ -115,15 +120,20 @@
 
           &:hover {
             color: $color-primary;
+            text-decoration: underline;
 
-            &::after {
-              position: absolute;
-              left: calc(50% - (calc(100% - 3rem) / 2));
-              bottom: 1.7rem;
-              content: '';
-              height: 1px;
-              width: calc(100% - 3rem);
-              border-bottom: 2px solid white;
+            @media screen and (min-width: 768px) {
+              text-decoration: none;
+
+              &::after {
+                position: absolute;
+                left: calc(50% - (calc(100% - 3rem) / 2));
+                bottom: 1.7rem;
+                content: '';
+                height: 1px;
+                width: calc(100% - 3rem);
+                border-bottom: 2px solid white;
+              }
             }
           }
 
