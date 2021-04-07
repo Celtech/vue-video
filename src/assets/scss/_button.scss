@@ -1,0 +1,16 @@
+@import "colors";
+
+@mixin button {
+  .button {
+    padding: 1rem;
+    background: $color-primary;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      background: darken($color-primary, 10%);
+    }
+  }
+}

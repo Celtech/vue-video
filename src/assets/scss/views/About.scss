@@ -1,0 +1,19 @@
+@import "../colors";
+
+#about-container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 1rem;
+
+  section {
+    p {
+      margin: 1rem 0;
+
+      img {
+        float: left;
+        width: 250px;
+        margin: 0 1rem 0 0;
+      }
+    }
+  }
+}

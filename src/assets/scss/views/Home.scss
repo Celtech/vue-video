@@ -1,0 +1,47 @@
+@import "../colors";
+@import "../button";
+
+#home {
+  width: 100%;
+
+  &-header {
+    font-family: 'Barlow Condensed', sans-serif;
+    background: #090c13 url("../assets/images/header-bg.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .event-details {
+      max-width: 1140px;
+      width: 100%;
+      padding: 0 1rem;
+      margin: 0 auto;
+
+      .container {
+        .card {
+          background: rgba(9,12,19,0.4);
+          width: fit-content;
+          padding: 1.5rem;
+
+          @include button;
+
+          h2 {
+            font-size: 1.5rem;
+
+            .highlight {
+              color: $color-primary;
+            }
+          }
+
+          h3 {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
