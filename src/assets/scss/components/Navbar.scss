@@ -1,9 +1,141 @@
 @import "../colors";
 
-.navbar {
-  ul {
-    li {
-      padding: 1rem;
+.navbar-fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(9,12,19,0) !important;
+}
+
+#navbar {
+  background: rgba(9,12,19,1);
+  width: 100%;
+  user-select: none;
+  font-family: 'Barlow Condensed', sans-serif;
+
+  &-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 1rem;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    .navbar-branding {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      padding: 0.5rem 0;
+      @media screen and (min-width: 768px) {
+        padding: 0;
+      }
+
+      .branding-link {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        text-decoration: none;
+
+        .logo {
+          display: inline-block;
+          width: 75px;
+          margin: 0 0.5rem 0 0;
+        }
+
+        h2 {
+          display: inline-block;
+          height: 100%;
+          font-weight: bold;
+          font-size: 1.25rem;
+        }
+      }
+    }
+
+    .navbar-toggle {
+      cursor: pointer;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 2rem;
+      margin-top: 7px;
+
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    .nav-links {
+      list-style: none;
+      display: none;
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        display: inline-block;
+        width: fit-content;
+      }
+
+      &.active {
+        display: block;
+
+      }
+
+      li {
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+
+        @media screen and (min-width: 768px) {
+          display: inline-block;
+        }
+
+        &.active {
+          &::after {
+            position: absolute;
+            left: calc(50% - (calc(100% - 3rem) / 2));
+            bottom: 1.7rem;
+            content: '';
+            height: 1px;
+            width: calc(100% - 3rem);
+            border-bottom: 2px solid white;
+          }
+        }
+
+        a {
+          text-transform: uppercase;
+          position: relative;
+          display: block;
+          text-decoration: none;
+          font-weight: bold;
+          padding: 2rem 1.5rem;
+          color: white;
+
+          &:hover {
+            color: $color-primary;
+
+            &::after {
+              position: absolute;
+              left: calc(50% - (calc(100% - 3rem) / 2));
+              bottom: 1.7rem;
+              content: '';
+              height: 1px;
+              width: calc(100% - 3rem);
+              border-bottom: 2px solid white;
+            }
+          }
+
+          &:visited {
+            color: white;
+          }
+
+          &:active {
+            color: $color-primary;
+          }
+        }
+      }
     }
   }
 }
