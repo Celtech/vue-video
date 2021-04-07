@@ -3,17 +3,17 @@
 #about-container {
   max-width: 1140px;
   margin: auto;
-  overflow: hidden;
-  padding: 1rem 0;
+  padding: 1rem;
 
-  p {
-    margin: 1rem 0;
+  section {
+    p {
+      margin: 1rem 0;
 
-    img {
-      float: left;
-      width: 300px;
-      margin: 0 .5rem;
+      img {
+        float: left;
+        width: 250px;
+        margin: 0 1rem 0 0;
+      }
     }
   }
-
 }

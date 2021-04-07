@@ -111,6 +111,7 @@
           text-decoration: none;
           font-weight: bold;
           padding: 2rem 1.5rem;
+          color: white;
 
           &:hover {
             color: $color-primary;
@@ -128,6 +129,10 @@
 
           &:visited {
             color: white;
+          }
+
+          &:active {
+            color: $color-primary;
           }
         }
       }
