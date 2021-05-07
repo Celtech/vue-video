@@ -2,7 +2,7 @@
 
 @mixin button {
   .button {
-    display: block;
+    display: inline-block;
     width: fit-content;
     text-decoration: none;
     padding: 1rem;
@@ -14,6 +14,24 @@
 
     &:hover {
       background: darken($color-primary, 10%);
+    }
+
+    &-primary {
+      background: $color-dark !important;
+      color: white !important;
+
+      &:hover {
+        background: lighten($color-dark, 10%) !important;
+      }
+    }
+
+    &-block {
+      display: block !important;
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        width: fit-content;
+      }
     }
   }
 }

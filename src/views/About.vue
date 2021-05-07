@@ -6,17 +6,11 @@
           src="https://scontent.ffcm1-1.fna.fbcdn.net/v/t1.6435-9/125544116_4048501591832105_803089881703521016_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=yP9Y6H2cgOYAX_Q0WG9&_nc_ht=scontent.ffcm1-1.fna&oh=b36378ff778469ea227d92606bc47f4a&oe=60931337"
           alt="Jordan"
         />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et orci
-        nisl. Ut malesuada ut nisl in hendrerit. Aenean quis purus turpis. Nunc
-        ante arcu, rutrum vitae massa vel, finibus tristique nisl. Proin ac
-        mauris in mauris porttitor tristique. Aenean imperdiet enim ut justo
-        faucibus, id sagittis risus dapibus. Aenean euismod massa vel lorem
-        luctus, in viverra elit venenatis. Pellentesque habitant morbi tristique
-        senectus et netus et malesuada fames ac turpis egestas. Ut nisi justo,
-        sollicitudin eget ultricies bibendum, porta et lacus. Cras hendrerit,
-        tortor vel gravida faucibus, nibh arcu bibendum turpis, vitae eleifend
-        nunc nulla in tellus. Fusce velit diam, consectetur vitae nibh ac,
-        sodales feugiat arcu.
+        Olijoy is an American Dj/Producer from Wisconsin. Olijoy who goes by
+        Jordan Oliver to his friends and family started making music and djing
+        at the age of 21. Olijoy’s music combines styles as diverse as melodic
+        dubstep, trance, drum and bass, and electro house. This combination of
+        styles creates a unique experience live at his local shows.
       </p>
 
       <p>
