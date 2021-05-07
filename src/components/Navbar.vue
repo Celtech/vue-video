@@ -36,12 +36,12 @@
           <router-link :to="{ name: 'Music' }">Music</router-link>
         </li>
 
-        <li :class="['Merch'].indexOf($route.name) > -1 ? 'active' : ''">
-          <router-link :to="{ name: 'Merch' }">Merch</router-link>
+        <li>
+          <a href="http://merch.olijoyofficial.com/">Merch</a>
         </li>
 
-        <li>
-          <router-link to="/">Contact</router-link>
+        <li :class="['Contact'].indexOf($route.name) > -1 ? 'active' : ''">
+          <router-link :to="{ name: 'Contact' }">Contact</router-link>
         </li>
       </ul>
     </div>
